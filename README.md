@@ -6,6 +6,8 @@ Chiang Mai license plate (province name เชียงใหม่, stamp, and 
 
 Forked / inspired by [RAGUL01212321's JDM-theme-Grub](https://github.com/RAGUL01212321/JDM-theme-Grub).
 
+![Preview](Previews/preview_1280x800.png)
+
 ## Fixes over the original theme
 
 * **Fonts now actually load.** The original kept `.pf2` files in a `fonts/`
