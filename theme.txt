@@ -1,0 +1,85 @@
+# ============================================================
+#  GRUB CUSTOM BOOTLOADER — MB-CM-Grub-Fedora
+#  "SELECT STARTUP ROUTE"
+# ============================================================
+
+# --- Desktop Background ---
+desktop-image: "background.png"
+desktop-color: "#000000"
+
+# --- Title ---
+title-text: ""
+title-font: "Rajdhani Regular 24"
+title-color: "#CCCCCC"
+
+# --- Terminal (fallback console) ---
+terminal-font: "Rajdhani Regular 24"
+
+# ============================================================
+#  BOOT MENU
+#  Positioned on the left side, matching the mockup layout
+# ============================================================
+
++ label {
+    left = 4%
+    top = 22%
+    width = 470
+    height = 40
+    text = "SELECT STARTUP ROUTE"
+    font = "Rajdhani Regular 32"
+    color = "#CCCCCC"
+    align = "center"
+}
+
++ boot_menu {
+    left = 4%
+    top = 25%
+    width = 470
+    height = 50%
+
+    # --- Fonts ---
+    item_font = "Rajdhani Regular 24"
+    selected_item_font = "Rajdhani Regular 24"
+
+    # --- Colors ---
+    item_color = "#00000000"
+    selected_item_color = "#00000000"
+
+    # --- Item Layout ---
+    item_height = 96
+    item_padding = 0
+    item_spacing = 12
+    item_icon_space = -450
+
+    # --- Icons (These are our car plates!) ---
+    icon_width = 450
+    icon_height = 96
+    icon_source = "icons"
+ 
+    # --- Selected Item Highlight (red glow border) ---
+    selected_item_pixmap_style = "select_glow/select_*.png"
+
+
+    # --- Scrollbar ---
+    scrollbar = false
+}
+
+# ============================================================
+#  COUNTDOWN / TIMEOUT PROGRESS BAR
+# ============================================================
+
++ progress_bar {
+    id = "__timeout__"
+    left = 25%
+    top = 82%
+    width = 50%
+    height = 6
+
+    fg_color = "#E83030"
+    bg_color = "#1A1A1A"
+    border_color = "#333333"
+
+    text_color = "#FFFFFF"
+    font = "Rajdhani Regular 24"
+    text = "%d seconds"
+}
