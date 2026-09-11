@@ -133,8 +133,10 @@ MB-CM-Grub-Fedora/
 └── select_glow/         # 9-slice highlight for the selected entry
 ```
 
-## Credits
+## Credits & Licensing
 
 * Original theme: [RAGUL01212321 / JDM-theme-Grub](https://github.com/RAGUL01212321/JDM-theme-Grub)
-* Font: [Rajdhani](https://fonts.google.com/specimen/Rajdhani) (OFL)
+* Font: [Rajdhani](https://fonts.google.com/specimen/Rajdhani) (SIL OFL)
 * Preview tooling: [grub2-theme-preview](https://github.com/hartwork/grub2-theme-preview)
+* Artwork used under CC-BY is attributed in [LICENSE](LICENSE) — keep the
+  attribution if you redistribute.
